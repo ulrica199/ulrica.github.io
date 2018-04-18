@@ -460,9 +460,7 @@
 <p>通过数组下标引用</p>
 <p>通过名称引用</p>
 <h3 id="DOM中对象的引用"><a href="#DOM中对象的引用" class="headerlink" title="DOM中对象的引用"></a>DOM中对象的引用</h3><p>文档（document）节点，Document接口<br>元素（element）节点，<br>属性（attr）节点，<br>注释（comment）节点，在DOM中使用CharacterData接口来访问文本节点和注释节点、</p>
-<p>######Element接口只有一个属性，就是tagName属性</p>
-<p>######使用Document接口的getElementById（）方法来获得指定id值得节点。</p>
-<p>######Element接口中有一个setAttribute（）方法，可以用来设置节点的属性值。<br><code>elementNode.setAttribute（attrName，attrValue）</code></p>
+<h6 id="Element接口只有一个属性，就是tagName属性"><a href="#Element接口只有一个属性，就是tagName属性" class="headerlink" title="Element接口只有一个属性，就是tagName属性"></a>Element接口只有一个属性，就是tagName属性</h6><h6 id="使用Document接口的getElementById（）方法来获得指定id值得节点。"><a href="#使用Document接口的getElementById（）方法来获得指定id值得节点。" class="headerlink" title="使用Document接口的getElementById（）方法来获得指定id值得节点。"></a>使用Document接口的getElementById（）方法来获得指定id值得节点。</h6><h6 id="Element接口中有一个setAttribute（）方法，可以用来设置节点的属性值。"><a href="#Element接口中有一个setAttribute（）方法，可以用来设置节点的属性值。" class="headerlink" title="Element接口中有一个setAttribute（）方法，可以用来设置节点的属性值。"></a>Element接口中有一个setAttribute（）方法，可以用来设置节点的属性值。</h6><p><code>elementNode.setAttribute（attrName，attrValue）</code></p>
 
       
 
@@ -613,6 +611,79 @@
 
 
   
+    <article id="psot-JavaScipt-三" class="article article-type-psot  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/11/17/JavaScipt-三/">JavaScipt（三）</a>
+    </h1>
+  
+
+        
+        <a href="/2017/11/17/JavaScipt-三/" class="archive-article-date">
+  	<time datetime="2017-11-17T01:49:09.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-17</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h1><h6 id="使用字符串对象的split"><a href="#使用字符串对象的split" class="headerlink" title="使用字符串对象的split()"></a>使用字符串对象的split()</h6><h6 id="添加-删除"><a href="#添加-删除" class="headerlink" title="添加.删除."></a>添加.删除.</h6><p>添加直接为不存在的元素赋值<br>delete运算符删除数组元素后，数组的长度并没有改变，只是被删除的数组元素的值为undefined。</p>
+<h6 id="数组中的数组"><a href="#数组中的数组" class="headerlink" title="数组中的数组"></a>数组中的数组</h6><hr>
+<h5 id="数组对象"><a href="#数组对象" class="headerlink" title="数组对象"></a>数组对象</h5><h6 id="数组的长度"><a href="#数组的长度" class="headerlink" title="数组的长度"></a>数组的长度</h6><p><code>arr.length</code></p>
+<h6 id="将数组转换为字符串"><a href="#将数组转换为字符串" class="headerlink" title="将数组转换为字符串"></a>将数组转换为字符串</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">arrObj.toString()</span><br><span class="line"></span><br><span class="line">先将数组中的所有元素都转换成字符串后，再使用逗号将这些字符串连接，并将最后结果返回。</span><br><span class="line"></span><br><span class="line">arrObj.toLocaleString()</span><br><span class="line"></span><br><span class="line">arrObj.join(separator)</span><br></pre></td></tr></table></figure>
+<h6 id="添加数组元素"><a href="#添加数组元素" class="headerlink" title="添加数组元素"></a>添加数组元素</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">arrObj.unshift(element1,emlement2,......)头部插入</span><br><span class="line"></span><br><span class="line">arrObj.push(element1,emlement2,......)尾部插入</span><br><span class="line"></span><br><span class="line">arrObj.splice(index,0,element1,emlement2,......)任何位置插入</span><br></pre></td></tr></table></figure>
+<h6 id="添加数组元素并返回新数组"><a href="#添加数组元素并返回新数组" class="headerlink" title="添加数组元素并返回新数组"></a>添加数组元素并返回新数组</h6><p><code>arrObj.concat(element1,element2,....)</code><br>不会修改原数组的数据，而是返回一个新的数组。</p>
+<h6 id="删除数组元素"><a href="#删除数组元素" class="headerlink" title="删除数组元素"></a>删除数组元素</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">arrObj.shift()删除数组头部位置</span><br><span class="line"></span><br><span class="line">arrObj.pop()删除数组尾部位置</span><br><span class="line"></span><br><span class="line">arrObj.splice(index,length)删除数组任何位置元素，index为下标，</span><br></pre></td></tr></table></figure>
+<h6 id="替换数组中的元素"><a href="#替换数组中的元素" class="headerlink" title="替换数组中的元素"></a>替换数组中的元素</h6><p><code>arrObj.splice(index,length,element1,element2,......)</code></p>
+<h6 id="获得数组中的部分元素"><a href="#获得数组中的部分元素" class="headerlink" title="获得数组中的部分元素"></a>获得数组中的部分元素</h6><p><code>arrObj.slice(begin[,end])</code><br>参数begin代表要获取的子数组的起始下标，end代表要获取的子数组部分的结束下标，不包含下标上的元素。</p>
+<h6 id="将数组中的元素进行排序"><a href="#将数组中的元素进行排序" class="headerlink" title="将数组中的元素进行排序"></a>将数组中的元素进行排序</h6><p><code>arrObj.sort([fun])</code></p>
+<h6 id="颠倒数组元素"><a href="#颠倒数组元素" class="headerlink" title="颠倒数组元素"></a>颠倒数组元素</h6><p><code>arr.reverse()</code></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/11/17/JavaScipt-三/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="psot-JavaScipt（三）" class="article article-type-psot  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -657,83 +728,6 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2017/11/17/JavaScipt（三）/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="psot-JavaScipt-三" class="article article-type-psot  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/17/JavaScipt-三/">JavaScipt（三）</a>
-    </h1>
-  
-
-        
-        <a href="/2017/11/17/JavaScipt-三/" class="archive-article-date">
-  	<time datetime="2017-11-17T01:49:09.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-17</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>#数组</p>
-<p>######使用字符串对象的split() </p>
-<p>######添加.删除.<br>添加直接为不存在的元素赋值<br>delete运算符删除数组元素后，数组的长度并没有改变，只是被删除的数组元素的值为undefined。</p>
-<p>######数组中的数组</p>
-<hr>
-<p>#####数组对象</p>
-<p>######数组的长度<br><code>arr.length</code></p>
-<p>######将数组转换为字符串<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">arrObj.toString()</span><br><span class="line"></span><br><span class="line">先将数组中的所有元素都转换成字符串后，再使用逗号将这些字符串连接，并将最后结果返回。</span><br><span class="line"></span><br><span class="line">arrObj.toLocaleString()</span><br><span class="line"></span><br><span class="line">arrObj.join(separator)</span><br></pre></td></tr></table></figure></p>
-<p>######添加数组元素<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">arrObj.unshift(element1,emlement2,......)头部插入</span><br><span class="line"></span><br><span class="line">arrObj.push(element1,emlement2,......)尾部插入</span><br><span class="line"></span><br><span class="line">arrObj.splice(index,0,element1,emlement2,......)任何位置插入</span><br></pre></td></tr></table></figure></p>
-<p>######添加数组元素并返回新数组<br><code>arrObj.concat(element1,element2,....)</code><br>不会修改原数组的数据，而是返回一个新的数组。</p>
-<p>######删除数组元素<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">arrObj.shift()删除数组头部位置</span><br><span class="line"></span><br><span class="line">arrObj.pop()删除数组尾部位置</span><br><span class="line"></span><br><span class="line">arrObj.splice(index,length)删除数组任何位置元素，index为下标，</span><br></pre></td></tr></table></figure></p>
-<p>######替换数组中的元素<br><code>arrObj.splice(index,length,element1,element2,......)</code></p>
-<p>######获得数组中的部分元素<br><code>arrObj.slice(begin[,end])</code><br>参数begin代表要获取的子数组的起始下标，end代表要获取的子数组部分的结束下标，不包含下标上的元素。</p>
-<p>######将数组中的元素进行排序<br><code>arrObj.sort([fun])</code></p>
-<p>######颠倒数组元素<br><code>arr.reverse()</code></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/11/17/JavaScipt-三/">展开全文 >></a>
         </p>
       
 
