@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>about | Hexo</title>
+  <title>git（三) | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="关于我一个学习前端知识的小菜鸟 email: ulrica1994new@163.com">
-<meta property="og:type" content="website">
-<meta property="og:title" content="about">
-<meta property="og:url" content="http://yoursite.com/about/index.html">
+  <meta name="description" content="提交前12$ git status -s M welcome.txt  位于第二列，第一列是一个空格。位于第二列的字符M的含义是：工作区当前的文件与处于中间状态——提交任务（提交暂存区 stage）中的文件相比有改动。 提交后12$ git status -sM  welcome.txt 位于第一列的M的含义是：版本库的文件与处于中间状态——提交任务（提交暂存区 stage）中的文件相比有改动。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="git（三)">
+<meta property="og:url" content="http://yoursite.com/2017/12/05/git-三/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="关于我一个学习前端知识的小菜鸟 email: ulrica1994new@163.com">
+<meta property="og:description" content="提交前12$ git status -s M welcome.txt  位于第二列，第一列是一个空格。位于第二列的字符M的含义是：工作区当前的文件与处于中间状态——提交任务（提交暂存区 stage）中的文件相比有改动。 提交后12$ git status -sM  welcome.txt 位于第一列的M的含义是：版本库的文件与处于中间状态——提交任务（提交暂存区 stage）中的文件相比有改动。">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-04-18T09:58:36.226Z">
+<meta property="og:updated_time" content="2018-04-10T11:59:10.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="about">
-<meta name="twitter:description" content="关于我一个学习前端知识的小菜鸟 email: ulrica1994new@163.com">
+<meta name="twitter:title" content="git（三)">
+<meta name="twitter:description" content="提交前12$ git status -s M welcome.txt  位于第二列，第一列是一个空格。位于第二列的字符M的含义是：工作区当前的文件与处于中间状态——提交任务（提交暂存区 stage）中的文件相比有改动。 提交后12$ git status -sM  welcome.txt 位于第一列的M的含义是：版本库的文件与处于中间状态——提交任务（提交暂存区 stage）中的文件相比有改动。">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -154,28 +154,40 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="page-" class="article article-type-page " itemscope itemprop="blogPost">
+            <article id="post-git-三" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      about
+      git（三)
     </h1>
   
 
         
-        <a href="/about/index.html" class="archive-article-date">
-  	<time datetime="2018-04-18T09:57:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-18</time>
+        <a href="/2017/12/05/git-三/" class="archive-article-date">
+  	<time datetime="2017-12-05T07:36:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-05</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h2><p>一个学习前端知识的小菜鸟</p>
-<p>email: <a href="mailto:ulrica1994new@163.com" target="_blank" rel="noopener">ulrica1994new@163.com</a></p>
+        <p>提交前<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git status -s</span><br><span class="line"> M welcome.txt</span><br></pre></td></tr></table></figure></p>
+<p> 位于第二列，第一列是一个空格。位于第二列的字符M的含义是：工作区当前的文件与处于中间状态——提交任务（提交暂存区 stage）中的文件相比有改动。</p>
+<p>提交后<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git status -s</span><br><span class="line">M  welcome.txt</span><br></pre></td></tr></table></figure></p>
+<p>位于第一列的M的含义是：版本库的文件与处于中间状态——提交任务（提交暂存区 stage）中的文件相比有改动。</p>
+<h6 id="查看精简的状态输出"><a href="#查看精简的状态输出" class="headerlink" title="查看精简的状态输出"></a>查看精简的状态输出</h6><p>状态输出中，文件名前面少了一个M，即只剩下第二列的字母M。那么即提交任务（提交暂存区，stage）中的内容被提交到版本库中，所以第一列会因为提交暂存区与版本库中的状态一致而显示一个空白。</p>
+<hr>
+<h6 id="工作区-版本库-暂存区"><a href="#工作区-版本库-暂存区" class="headerlink" title="工作区 版本库 暂存区"></a>工作区 版本库 暂存区</h6><ol>
+<li>当对工作区修改的文件执行git add命令时，暂存区的目录树将被更新，同时工作区修改的文件内容会被写入到对象库中的一个新的对象中，而该对象的ID被记录在暂存区的文件索引中。</li>
+<li>当执行提交操作（git commit ）时，暂存区放入目录树会写到版本库（对象库）中，master分支会做相应的更新，即master最新指向的目录树就是提交时原暂存区的目录树就是提交时原暂存区的目录树。</li>
+<li>当执行git reset HEAD 命令时，暂存区的目录树会被重写，会被master分支指向的目录树所替换，但是工作区不受影响。</li>
+<li>当执行git rm –cached<file>命令时，会直接从暂存区删除文件，工作区则不做出改变。</file></li>
+<li>当执行git chechout.或git chechout –<file>命令时，会用暂存区全部的文件或指定的文件替换工作区的文件。这个操作会清除工作区中未添加到暂存区的改动。</file></li>
+<li>当执行git checkout HEAD或git checkout HEAD <file>命令时。会用HEAD指向的master 分支中的全部或部分文件替换暂存区和工作区中的文件。这个命令不但会清除工作中未提交的改动，也会清除暂存区未提交的改动。</file></li>
+</ol>
 
       
 
@@ -255,7 +267,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/about/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2017/12/05/git-三/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -267,6 +279,25 @@
 </article>
 
   
+<nav id="article-nav">
+  
+    <a href="/2018/04/17/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Hello World
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/12/01/打印九九乘法表/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">post打印九九乘法表</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -317,7 +348,7 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,

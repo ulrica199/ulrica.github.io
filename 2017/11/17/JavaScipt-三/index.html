@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>about | Hexo</title>
+  <title>JavaScipt（三） | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="关于我一个学习前端知识的小菜鸟 email: ulrica1994new@163.com">
-<meta property="og:type" content="website">
-<meta property="og:title" content="about">
-<meta property="og:url" content="http://yoursite.com/about/index.html">
+  <meta name="description" content="#数组 ######使用字符串对象的split()  ######添加.删除.添加直接为不存在的元素赋值delete运算符删除数组元素后，数组的长度并没有改变，只是被删除的数组元素的值为undefined。 ######数组中的数组  #####数组对象 ######数组的长度arr.length ######将数组转换为字符串1234567arrObj.toString()先将数组中的所有元素都">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JavaScipt（三）">
+<meta property="og:url" content="http://yoursite.com/2017/11/17/JavaScipt-三/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="关于我一个学习前端知识的小菜鸟 email: ulrica1994new@163.com">
+<meta property="og:description" content="#数组 ######使用字符串对象的split()  ######添加.删除.添加直接为不存在的元素赋值delete运算符删除数组元素后，数组的长度并没有改变，只是被删除的数组元素的值为undefined。 ######数组中的数组  #####数组对象 ######数组的长度arr.length ######将数组转换为字符串1234567arrObj.toString()先将数组中的所有元素都">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-04-18T09:58:36.226Z">
+<meta property="og:updated_time" content="2017-11-17T06:46:20.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="about">
-<meta name="twitter:description" content="关于我一个学习前端知识的小菜鸟 email: ulrica1994new@163.com">
+<meta name="twitter:title" content="JavaScipt（三）">
+<meta name="twitter:description" content="#数组 ######使用字符串对象的split()  ######添加.删除.添加直接为不存在的元素赋值delete运算符删除数组元素后，数组的长度并没有改变，只是被删除的数组元素的值为undefined。 ######数组中的数组  #####数组对象 ######数组的长度arr.length ######将数组转换为字符串1234567arrObj.toString()先将数组中的所有元素都">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -154,28 +154,41 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="page-" class="article article-type-page " itemscope itemprop="blogPost">
+            <article id="psot-JavaScipt-三" class="article article-type-psot " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      about
+      JavaScipt（三）
     </h1>
   
 
         
-        <a href="/about/index.html" class="archive-article-date">
-  	<time datetime="2018-04-18T09:57:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-18</time>
+        <a href="/2017/11/17/JavaScipt-三/" class="archive-article-date">
+  	<time datetime="2017-11-17T01:49:09.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-17</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h2><p>一个学习前端知识的小菜鸟</p>
-<p>email: <a href="mailto:ulrica1994new@163.com" target="_blank" rel="noopener">ulrica1994new@163.com</a></p>
+        <p>#数组</p>
+<p>######使用字符串对象的split() </p>
+<p>######添加.删除.<br>添加直接为不存在的元素赋值<br>delete运算符删除数组元素后，数组的长度并没有改变，只是被删除的数组元素的值为undefined。</p>
+<p>######数组中的数组</p>
+<hr>
+<p>#####数组对象</p>
+<p>######数组的长度<br><code>arr.length</code></p>
+<p>######将数组转换为字符串<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">arrObj.toString()</span><br><span class="line"></span><br><span class="line">先将数组中的所有元素都转换成字符串后，再使用逗号将这些字符串连接，并将最后结果返回。</span><br><span class="line"></span><br><span class="line">arrObj.toLocaleString()</span><br><span class="line"></span><br><span class="line">arrObj.join(separator)</span><br></pre></td></tr></table></figure></p>
+<p>######添加数组元素<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">arrObj.unshift(element1,emlement2,......)头部插入</span><br><span class="line"></span><br><span class="line">arrObj.push(element1,emlement2,......)尾部插入</span><br><span class="line"></span><br><span class="line">arrObj.splice(index,0,element1,emlement2,......)任何位置插入</span><br></pre></td></tr></table></figure></p>
+<p>######添加数组元素并返回新数组<br><code>arrObj.concat(element1,element2,....)</code><br>不会修改原数组的数据，而是返回一个新的数组。</p>
+<p>######删除数组元素<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">arrObj.shift()删除数组头部位置</span><br><span class="line"></span><br><span class="line">arrObj.pop()删除数组尾部位置</span><br><span class="line"></span><br><span class="line">arrObj.splice(index,length)删除数组任何位置元素，index为下标，</span><br></pre></td></tr></table></figure></p>
+<p>######替换数组中的元素<br><code>arrObj.splice(index,length,element1,element2,......)</code></p>
+<p>######获得数组中的部分元素<br><code>arrObj.slice(begin[,end])</code><br>参数begin代表要获取的子数组的起始下标，end代表要获取的子数组部分的结束下标，不包含下标上的元素。</p>
+<p>######将数组中的元素进行排序<br><code>arrObj.sort([fun])</code></p>
+<p>######颠倒数组元素<br><code>arr.reverse()</code></p>
 
       
 
@@ -255,7 +268,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/about/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2017/11/17/JavaScipt-三/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -267,6 +280,25 @@
 </article>
 
   
+<nav id="article-nav">
+  
+    <a href="/2017/11/17/JavaScipt（三）/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          JavaScipt&lt;三&gt;
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/11/16/JavaScript-二/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">JavaScript&lt;二&gt;</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -317,7 +349,7 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,

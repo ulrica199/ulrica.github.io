@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>about | Hexo</title>
+  <title>JavaScript&lt;二&gt; | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="关于我一个学习前端知识的小菜鸟 email: ulrica1994new@163.com">
-<meta property="og:type" content="website">
-<meta property="og:title" content="about">
-<meta property="og:url" content="http://yoursite.com/about/index.html">
+  <meta name="description" content="核心对象 Infinity 用于表示无穷大数值 NaN  用于表示非数字 undefined  用于表示未定义   字符串对象统计字符串的字符数strObj.length 替换字符strObj.replace(regexp，replacestring)regexp要替换的字符串内容replacestring用于替换的字符串 字符串对象的所有方法都不会改变字符串本身内容，所以在使用replace（）">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JavaScript&lt;二&gt;">
+<meta property="og:url" content="http://yoursite.com/2017/11/16/JavaScript-二/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="关于我一个学习前端知识的小菜鸟 email: ulrica1994new@163.com">
+<meta property="og:description" content="核心对象 Infinity 用于表示无穷大数值 NaN  用于表示非数字 undefined  用于表示未定义   字符串对象统计字符串的字符数strObj.length 替换字符strObj.replace(regexp，replacestring)regexp要替换的字符串内容replacestring用于替换的字符串 字符串对象的所有方法都不会改变字符串本身内容，所以在使用replace（）">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-04-18T09:58:36.226Z">
+<meta property="og:updated_time" content="2018-04-10T11:56:24.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="about">
-<meta name="twitter:description" content="关于我一个学习前端知识的小菜鸟 email: ulrica1994new@163.com">
+<meta name="twitter:title" content="JavaScript&lt;二&gt;">
+<meta name="twitter:description" content="核心对象 Infinity 用于表示无穷大数值 NaN  用于表示非数字 undefined  用于表示未定义   字符串对象统计字符串的字符数strObj.length 替换字符strObj.replace(regexp，replacestring)regexp要替换的字符串内容replacestring用于替换的字符串 字符串对象的所有方法都不会改变字符串本身内容，所以在使用replace（）">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -154,29 +154,60 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="page-" class="article article-type-page " itemscope itemprop="blogPost">
+            <article id="post-JavaScript-二" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      about
+      JavaScript&lt;二&gt;
     </h1>
   
 
         
-        <a href="/about/index.html" class="archive-article-date">
-  	<time datetime="2018-04-18T09:57:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-18</time>
+        <a href="/2017/11/16/JavaScript-二/" class="archive-article-date">
+  	<time datetime="2017-11-16T05:39:34.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-16</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h2><p>一个学习前端知识的小菜鸟</p>
-<p>email: <a href="mailto:ulrica1994new@163.com" target="_blank" rel="noopener">ulrica1994new@163.com</a></p>
-
+        <h3 id="核心对象"><a href="#核心对象" class="headerlink" title="核心对象"></a>核心对象</h3><ol>
+<li>Infinity 用于表示无穷大数值</li>
+<li>NaN  用于表示非数字</li>
+<li>undefined  用于表示未定义</li>
+</ol>
+<hr>
+<h1 id="字符串对象"><a href="#字符串对象" class="headerlink" title="字符串对象"></a>字符串对象</h1><h6 id="统计字符串的字符数"><a href="#统计字符串的字符数" class="headerlink" title="统计字符串的字符数"></a>统计字符串的字符数</h6><p><code>strObj.length</code></p>
+<h6 id="替换字符"><a href="#替换字符" class="headerlink" title="替换字符"></a>替换字符</h6><p><code>strObj.replace(regexp，replacestring)</code><br>regexp要替换的字符串内容replacestring用于替换的字符串</p>
+<p>字符串对象的所有方法都不会改变字符串本身内容，所以在使用replace（）后要讲返回值赋给变量</p>
+<h6 id="定位"><a href="#定位" class="headerlink" title="定位"></a>定位</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">StringObj.indexOf(searchstring [,index])第一次出现位置</span><br><span class="line"></span><br><span class="line">StringObj.lastIndexOf(searchstring [,index])最后一次出现位置</span><br></pre></td></tr></table></figure>
+<p>-StringObj字符串对象<br>-searchstring用于查找的字符串<br>-index用于规定字符串开始查找的位置<br>没有找到返回-1</p>
+<h6 id="返回字符串中的某个字符"><a href="#返回字符串中的某个字符" class="headerlink" title="返回字符串中的某个字符"></a>返回字符串中的某个字符</h6><p><code>StringObj.charAt(index)</code></p>
+<h6 id="返回字符串中的子字符串"><a href="#返回字符串中的子字符串" class="headerlink" title="返回字符串中的子字符串"></a>返回字符串中的子字符串</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">StringObj.substring(startindex[,endindex])</span><br><span class="line"></span><br><span class="line">&lt;!--endindex为子字符串的结束位置，不包含该位置上的字符--&gt;</span><br><span class="line"></span><br><span class="line">StringObj.substr(index,length)</span><br><span class="line"></span><br><span class="line">StringObj.slice(startlndex,endindex)</span><br></pre></td></tr></table></figure>
+<p>如果index参数值小于0，IE浏览器会当做0处理，Firefox和Opera都会从字符串最后一个字符，-2为倒数第二个字符。</p>
+<p>######转换字符串大小写<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Sta.toLowerCase()</span><br><span class="line">Sta.toUpperCase()</span><br></pre></td></tr></table></figure></p>
+<h6 id="链接字符串"><a href="#链接字符串" class="headerlink" title="链接字符串"></a>链接字符串</h6><p><code>StringObj.concat(string1,string2, ......)</code></p>
+<h6 id="字符串和Unicode编号"><a href="#字符串和Unicode编号" class="headerlink" title="字符串和Unicode编号"></a>字符串和Unicode编号</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">charCodeAt() 返回字符串某个字符的Unicode编码</span><br><span class="line"></span><br><span class="line">fromCharCode() 将指定的Unicode字符编码创建一个字符串。</span><br></pre></td></tr></table></figure>
+<h6 id="为字符串添加样式"><a href="#为字符串添加样式" class="headerlink" title="为字符串添加样式"></a>为字符串添加样式</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">StringObj.anchor(name) 添加锚</span><br><span class="line"></span><br><span class="line">StringObj.big() 字体变大</span><br><span class="line"></span><br><span class="line">StringObj.blink() 字体闪烁，IE不支持</span><br><span class="line"></span><br><span class="line">StringObj.bold（）加粗</span><br><span class="line"></span><br><span class="line">StringObj.fixed()等宽字体</span><br><span class="line"></span><br><span class="line">StringObj.fontcolor()颜色</span><br><span class="line"></span><br><span class="line">StringObj.fontsize（）大小</span><br><span class="line"></span><br><span class="line">StringObj.italics（）倾斜</span><br><span class="line"></span><br><span class="line">StringObj.link（hrefAttribute）超链接</span><br><span class="line"></span><br><span class="line">StringObj.strike（）添加删除线</span><br><span class="line"></span><br><span class="line">StringObj.sub()下标</span><br><span class="line"></span><br><span class="line">StringObj.sup（）上标</span><br></pre></td></tr></table></figure>
+<hr>
+<h1 id="数字对象"><a href="#数字对象" class="headerlink" title="数字对象"></a>数字对象</h1><h6 id="数字对象的构造函数"><a href="#数字对象的构造函数" class="headerlink" title="数字对象的构造函数"></a>数字对象的构造函数</h6><p>使用new语句定义数字对象的方法<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">数字对象名=new Number（）</span><br><span class="line"></span><br><span class="line">数字对象名=new Number（参数）</span><br></pre></td></tr></table></figure></p>
+<p>Number()构造函数还有一个作用就是将参数转化为数字<br><figure class="highlight m"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var 数字 <span class="built_in">=</span> Number（参数）；</span><br><span class="line"></span><br><span class="line">数字 <span class="built_in">=</span> Mumber（参数）</span><br></pre></td></tr></table></figure></p>
+<p>如果参数中有一个字符不能转化为数字，则返回NaN</p>
+<h6 id="将数字转化为指定进制的字符串"><a href="#将数字转化为指定进制的字符串" class="headerlink" title="将数字转化为指定进制的字符串"></a>将数字转化为指定进制的字符串</h6><p><code>NumberObj.toString([radix])</code><br>radix参数是一个可选参数，用于表示转换进的进制，其取值范围为2到36之间的整数。若忽略radix参数，默认为十进制。</p>
+<h6 id="将数字转化为字符串时指定小数点后的位数"><a href="#将数字转化为字符串时指定小数点后的位数" class="headerlink" title="将数字转化为字符串时指定小数点后的位数"></a>将数字转化为字符串时指定小数点后的位数</h6><p><code>NumberObj.toFixed(number)</code><br>number定义为小数点后的位数，该参数有效值在0到20之间。省略参数默认为0，定义位数之后，以四舍五入的方式舍弃多余小数。</p>
+<p>####### 使用科学计数法将数字转化成字符串<br><code>NumberObj.toExponential([number])</code></p>
+<h6 id="将数字转化为字符串是指定输出位数"><a href="#将数字转化为字符串是指定输出位数" class="headerlink" title="将数字转化为字符串是指定输出位数"></a>将数字转化为字符串是指定输出位数</h6><p><code>NumberObj.toPrecision([number])</code></p>
+<hr>
+<h1 id="布尔对象"><a href="#布尔对象" class="headerlink" title="布尔对象"></a>布尔对象</h1><hr>
+<h1 id="日期对象"><a href="#日期对象" class="headerlink" title="日期对象"></a>日期对象</h1><p><code>DateObj.toLocaleFormat(formatString)</code>  formatString为要转换的日期那部分字符</p>
+<h5 id="查表：toLocalFormat（）方法中的格式字符"><a href="#查表：toLocalFormat（）方法中的格式字符" class="headerlink" title="查表：toLocalFormat（）方法中的格式字符"></a>查表：toLocalFormat（）方法中的格式字符</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">%Y-%m-%d   2009-12-02</span><br><span class="line"></span><br><span class="line">%H:%M:%S:%a   14:23:23</span><br></pre></td></tr></table></figure>
+<h6 id="获取日期对象中指定部分"><a href="#获取日期对象中指定部分" class="headerlink" title="获取日期对象中指定部分"></a>获取日期对象中指定部分</h6><h5 id="查表：日期对象中可以获得指定部分的方法"><a href="#查表：日期对象中可以获得指定部分的方法" class="headerlink" title="查表：日期对象中可以获得指定部分的方法"></a>查表：日期对象中可以获得指定部分的方法</h5><hr>
+<h6 id="设置日期对象中的指定部分"><a href="#设置日期对象中的指定部分" class="headerlink" title="设置日期对象中的指定部分"></a>设置日期对象中的指定部分</h6><h5 id="查表：用于这只日期指定部分的方法"><a href="#查表：用于这只日期指定部分的方法" class="headerlink" title="查表：用于这只日期指定部分的方法"></a>查表：用于这只日期指定部分的方法</h5><hr>
+<h1 id="数学对象"><a href="#数学对象" class="headerlink" title="数学对象"></a>数学对象</h1><h5 id="查表：数学对象的方-数学对象的属性"><a href="#查表：数学对象的方-数学对象的属性" class="headerlink" title="查表：数学对象的方 // 数学对象的属性"></a>查表：数学对象的方 // 数学对象的属性</h5><hr>
+<h1 id="错误对象"><a href="#错误对象" class="headerlink" title="错误对象"></a>错误对象</h1>
       
 
       
@@ -255,7 +286,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/about/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2017/11/16/JavaScript-二/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -267,6 +298,25 @@
 </article>
 
   
+<nav id="article-nav">
+  
+    <a href="/2017/11/17/JavaScipt-三/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          JavaScipt（三）
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/11/16/git-commend-二/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">git commend(二)</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -317,7 +367,7 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,

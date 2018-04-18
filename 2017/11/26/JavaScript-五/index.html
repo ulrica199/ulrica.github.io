@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>about | Hexo</title>
+  <title>JavaScript&lt;五&gt; | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="关于我一个学习前端知识的小菜鸟 email: ulrica1994new@163.com">
-<meta property="og:type" content="website">
-<meta property="og:title" content="about">
-<meta property="og:url" content="http://yoursite.com/about/index.html">
+  <meta name="description" content="对象模型和事件驱动BOM 浏览器对象模型DOM 文档对象模型 window对象下6个子对象： History对象 Frames数组 Documrnt对象 URL的Location对象 代表浏览器信息的Navigator对象 当前显示器信息的Screen对象  BOM对象的引用基本引用规则123456789open()close()document.write().history.back()loc">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JavaScript&lt;五&gt;">
+<meta property="og:url" content="http://yoursite.com/2017/11/26/JavaScript-五/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="关于我一个学习前端知识的小菜鸟 email: ulrica1994new@163.com">
+<meta property="og:description" content="对象模型和事件驱动BOM 浏览器对象模型DOM 文档对象模型 window对象下6个子对象： History对象 Frames数组 Documrnt对象 URL的Location对象 代表浏览器信息的Navigator对象 当前显示器信息的Screen对象  BOM对象的引用基本引用规则123456789open()close()document.write().history.back()loc">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-04-18T09:58:36.226Z">
+<meta property="og:updated_time" content="2018-04-10T11:51:42.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="about">
-<meta name="twitter:description" content="关于我一个学习前端知识的小菜鸟 email: ulrica1994new@163.com">
+<meta name="twitter:title" content="JavaScript&lt;五&gt;">
+<meta name="twitter:description" content="对象模型和事件驱动BOM 浏览器对象模型DOM 文档对象模型 window对象下6个子对象： History对象 Frames数组 Documrnt对象 URL的Location对象 代表浏览器信息的Navigator对象 当前显示器信息的Screen对象  BOM对象的引用基本引用规则123456789open()close()document.write().history.back()loc">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -154,28 +154,42 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="page-" class="article article-type-page " itemscope itemprop="blogPost">
+            <article id="post-JavaScript-五" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      about
+      JavaScript&lt;五&gt;
     </h1>
   
 
         
-        <a href="/about/index.html" class="archive-article-date">
-  	<time datetime="2018-04-18T09:57:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-18</time>
+        <a href="/2017/11/26/JavaScript-五/" class="archive-article-date">
+  	<time datetime="2017-11-26T05:02:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-26</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h2><p>一个学习前端知识的小菜鸟</p>
-<p>email: <a href="mailto:ulrica1994new@163.com" target="_blank" rel="noopener">ulrica1994new@163.com</a></p>
+        <h1 id="对象模型和事件驱动"><a href="#对象模型和事件驱动" class="headerlink" title="对象模型和事件驱动"></a>对象模型和事件驱动</h1><p>BOM 浏览器对象模型<br>DOM 文档对象模型</p>
+<h6 id="window对象下6个子对象："><a href="#window对象下6个子对象：" class="headerlink" title="window对象下6个子对象："></a>window对象下6个子对象：</h6><ol>
+<li>History对象</li>
+<li>Frames数组</li>
+<li>Documrnt对象</li>
+<li>URL的Location对象</li>
+<li>代表浏览器信息的Navigator对象</li>
+<li>当前显示器信息的Screen对象</li>
+</ol>
+<h3 id="BOM对象的引用"><a href="#BOM对象的引用" class="headerlink" title="BOM对象的引用"></a>BOM对象的引用</h3><p>基本引用规则<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">open()</span><br><span class="line"></span><br><span class="line">close()</span><br><span class="line"></span><br><span class="line">document.write()</span><br><span class="line"></span><br><span class="line">.history.back()</span><br><span class="line"></span><br><span class="line">location.reload()</span><br></pre></td></tr></table></figure></p>
+<p>通过数组下标引用</p>
+<p>通过名称引用</p>
+<h3 id="DOM中对象的引用"><a href="#DOM中对象的引用" class="headerlink" title="DOM中对象的引用"></a>DOM中对象的引用</h3><p>文档（document）节点，Document接口<br>元素（element）节点，<br>属性（attr）节点，<br>注释（comment）节点，在DOM中使用CharacterData接口来访问文本节点和注释节点、</p>
+<p>######Element接口只有一个属性，就是tagName属性</p>
+<p>######使用Document接口的getElementById（）方法来获得指定id值得节点。</p>
+<p>######Element接口中有一个setAttribute（）方法，可以用来设置节点的属性值。<br><code>elementNode.setAttribute（attrName，attrValue）</code></p>
 
       
 
@@ -255,7 +269,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/about/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2017/11/26/JavaScript-五/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -267,6 +281,25 @@
 </article>
 
   
+<nav id="article-nav">
+  
+    <a href="/2017/12/01/打印九九乘法表/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          post打印九九乘法表
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/11/19/JavaScript-四/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">JavaScript&lt;四&gt;</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -317,7 +350,7 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
